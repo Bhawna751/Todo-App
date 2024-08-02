@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Todo from './Todo'
 import Next7Days from './Next7Days'
+import { TodoContext } from '../context'
 
 function Todos(){
-    const selectedProject = "today"
+    const {selectedProject} = useContext(TodoContext)
     const todos = [
         {
             id : 'd54sd4',
@@ -11,7 +12,7 @@ function Todos(){
             time : "10:00 AM",
             date : "06/03/2021",
             day : "6",
-            checked : false,
+            checked : true,
             color : '#000000',
             project : 'personal'
         },
@@ -21,7 +22,7 @@ function Todos(){
             time : "09:00 AM",
             date : "08/03/2021",
             day : "1",
-            checked : true,
+            checked : false,
             color : '#00ff00',
             project : 'work'
         }
