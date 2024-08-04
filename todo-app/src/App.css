@@ -71,7 +71,7 @@
     top:25%;
     left:50%;
     transform: translate(-50%,-25%);
-    
+    background:white;
 }
 /* AddNewTodo */
 .AddNewTodo{
@@ -100,78 +100,77 @@
     transition: all 300ms ease;
 
 }
-
 /* AddNewTodo form */
-.TodoForm{
+.AddNewTodo form{
     padding: 1rem 1rem calc(1rem + 40px) 1rem;
-    width: 100%;
+    width: 500px;
     background:white;
     border-radius: 4px;
 
 }
-.TodoForm .text input{
+.AddNewTodo from .text input{
     padding: 1rem;
     width:100%;
     margin-bottom: 0.5rem;
     border:none;
     font-size: 1.2rem;
 }
-.TodoForm .text input:focus{
+.AddNewTodo form .text input:focus{
     outline:none;
     border-bottom: 1px solid #12b860;
 }
-.TodoForm .remind{
+.AddNewTodo form .remind{
     display: flex;
     align-items: center;
     padding:0.5rem;
 }
-.TodoForm p{
+.AddNewTodo form p{
     margin-left: 10px;
 }
-.TodoForm .title{
+.AddNewTodo form .title{
     display: flex;
     align-items: center;
     margin-bottom: 5px;
 }
-.TodoForm .pick-day{
+.AddNewTodo form .pick-day{
     padding: 1.5rem 1.5rem 0 1.5rem;
 }
-.TodoForm .pick-time{
+.AddNewTodo form .pick-time{
     padding: 1.5rem;
 }
-.TodoForm .pick-project{
+.AddNewTodo form .pick-project{
     padding:0.5rem;
 }
-.TodoForm .pick-project .projects{
+.AddNewTodo form .pick-project .projects{
     display: flex;
     flex-wrap: wrap;
     padding: 1rem 1rem 0 1rem;
 
 }
-.TodoForm .pick-project .projects .project{
+.AddNewTodo form .pick-project .projects .project{
     border: 1px solid #12b860;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
 }
-.TodoForm .pick-project .projects .active{
+.AddNewTodo form .pick-project .projects .active{
     background:#12b860;
     color:white;
 }
-.TodoForm .cancel{
+.AddNewTodo form .cancel{
     position:absolute;
     top:0;
     right: 5px;
     cursor:pointer;
 }
-.TodoForm .confirm{
+.AddNewTodo form .confirm{
     position: absolute;
     bottom: 0;
     left:0;
     width:100%;
 }
-.TodoForm .confirm button{
+.AddNewTodo form .confirm button{
     width:100%;
     height: 40px;
     background:#12b860;
@@ -389,65 +388,4 @@
   }
   .Todos .todos {
     overflow-y: auto;
-  }
-
-  /* Todo */
-.Todo {
-    padding: 0.5rem 1rem;
-  }
-  .Todo .todo-container {
-    display: flex;
-    align-items: center;
-  }
-  .Todo .todo-container span {
-    cursor: pointer;
-  }
-  .Todo .todo-container .text {
-    position: relative;
-    flex: 1;
-    margin: 0 10px;
-    cursor: pointer;
-  }
-  .Todo .todo-container .text span {
-    font-size: 0.8rem;
-    color: #bebebe;
-  }
-  .Todo .todo-container .text .line {
-    height: 1px;
-    background: #bebebe;
-    position: absolute;
-    top: 25%;
-    width: 0;
-    transition: width 250ms ease-in-out;
-  }
-  .Todo .todo-container .text .line-through {
-    width: 100%;
-  }
-  .Todo .todo-container .add-to-next-day {
-    margin-right: 10px;
-  }
-  /* Edit Todo */
-  .EditTodo{
-    position: absolute;
-    bottom: 40px;
-    left:calc(40px + 450px + 40px);
-
-    background-color: white;
-
-    height:80%;
-    width:450px;
-
-    border-radius: 4px;
-    opacity: 0.7;
-
-  }
-
-  .EditTodo .header{
-    margin: 1rem 0.5rem;
-
-    font-size: 1.2rem;
-    font-weight: bold;
-
-    padding-bottom: 2px;
-    border-bottom: 1px solid #eeeeee;
   }
